@@ -1,20 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MyMovie</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
 
         <header>
         </header>
+        <div class="container">
+          <div class="row">
 
-        <div id="main_logo">
-            <%=image_tag("main_logo.png", alt: "main_logo")%>
+        <div class="col-md-3">
+            <%=image_tag("main_logo.png", alt: "main_logo", id:"big_logo")%>
         </div>
 
-        <section id="images_langage">
+        <div class="col-md-6 text-center">
             <%=image_tag("left-arrow-head.png", alt: "Example Image")%>
               <%=image_tag("spain.png", alt: "Example Image")%>
               <%=image_tag("france.png", alt: "Example Image")%>
               <%=image_tag("united-kingdom.png", alt: "Example Image")%>
             <%=image_tag("right-arrow-head.png", alt: "Example Image")%>
-        </section>
+        </div>
+      </body>
 
         <footer>
         </footer>

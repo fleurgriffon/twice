@@ -1,0 +1,57 @@
+/*
+Error: File to import not found or unreadable: bootstrap-sprockets.
+        on line 15 of application.scss
+
+10:  * files in this directory. Styles in this file should be added after the last require_* statement.
+11:  * It is generally better to create a new file per style scope.
+12:  *
+13: *\/
+14: 
+15: @import "bootstrap-sprockets";
+16: @import "bootstrap";
+17: @import "pages";
+
+Backtrace:
+application.scss:15
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/Users/jouffroy/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: bootstrap-sprockets.\A         on line 15 of application.scss\A \A 10:  * files in this directory. Styles in this file should be added after the last require_* statement.\A 11:  * It is generally better to create a new file per style scope.\A 12:  *\A 13: */\A 14: \A 15: @import \"bootstrap-sprockets\";\A 16: @import \"bootstrap\";\A 17: @import \"pages\";"; }
