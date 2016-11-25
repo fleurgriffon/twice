@@ -1,33 +1,20 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>MyMovie</title>
-    <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
-  <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+  <div class="container-fluid">
 
-        <header>
-        </header>
-        <div class="container">
-          <div class="row">
+    <div class="row logo">
+      <div class="col-md-6 col-md-offset-3">
+        <h1 class="text-center"><%=link_to (image_tag("main_logo.png", alt: "main_logo", id:"big_logo"))%></h1>
+      </div>
+    </div>
 
-        <div class="col-md-3">
-            <%=image_tag("main_logo.png", alt: "main_logo", id:"big_logo")%>
-        </div>
-
-        <div class="col-md-6 text-center">
-            <%=image_tag("left-arrow-head.png", alt: "Example Image")%>
-              <%=image_tag("spain.png", alt: "Example Image")%>
-              <%=image_tag("france.png", alt: "Example Image")%>
-              <%=image_tag("united-kingdom.png", alt: "Example Image")%>
-            <%=image_tag("right-arrow-head.png", alt: "Example Image")%>
-        </div>
-      </body>
-
-        <footer>
-        </footer>
+    <div class="row">
+      <div class="col-md-6 text-center col-md-offset-3 drapeaux">
+          <%=link_to (image_tag("left-arrow-head.png", alt: "Example Image"))%>
+          <%=image_tag("spain.png", alt: "Example Image", id:"spain")%>
+          <%=link_to (image_tag("france.png", alt: "Example Image", id:"france"))%>
+          <%=image_tag("united-kingdom.png", alt: "Example Image", id:"uk")%>
+          <%=link_to (image_tag("right-arrow-head.png", alt: "Example Image"))%>
+      </div>
+    </div>
+  </div>
+  <%= render 'layouts/footer'%>

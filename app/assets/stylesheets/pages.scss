@@ -2,5 +2,25 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 #big_logo {
-  width: 30px;
+  width: 450px;
+}
+
+#uk, #spain {
+  width: 50px;
+  opacity: 0.5;
+}
+
+#france:hover {
+  opacity: .5;
+}
+.drapeaux img{
+  margin : 25px;
+}
+
+.logo {
+  margin-top: 30px;
+}
+
+.drapeaux {
+  margin-top: 30px;
 }
