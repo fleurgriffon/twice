@@ -1,0 +1,1 @@
+json.partial! "notions/notion", notion: @notion

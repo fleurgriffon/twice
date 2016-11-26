@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Notions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @notions.each do |notion| %>
+      <tr>
+        <td><%= link_to 'Show', notion %></td>
+        <td><%= link_to 'Edit', edit_notion_path(notion) %></td>
+        <td><%= link_to 'Destroy', notion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Notion', new_notion_path %>

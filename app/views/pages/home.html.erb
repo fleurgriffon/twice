@@ -1,9 +1,9 @@
 
-  <div class="container-fluid">
+  <div class="container-fluid home">
 
     <div class="row logo">
       <div class="col-md-6 col-md-offset-3">
-        <h1 class="text-center"><%=link_to (image_tag("main_logo.png", alt: "main_logo", id:"big_logo"))%></h1>
+        <h1 class="text-center"><%=link_to (image_tag("main_logo.png", alt: "main_logo", id:"big_logo")), pages_choice_path%></h1>
       </div>
     </div>
 
@@ -11,7 +11,7 @@
       <div class="col-md-6 text-center col-md-offset-3 drapeaux">
           <%=link_to (image_tag("left-arrow-head.png", alt: "Example Image"))%>
           <%=image_tag("spain.png", alt: "Example Image", id:"spain")%>
-          <%=link_to (image_tag("france.png", alt: "Example Image", id:"france"))%>
+          <%=link_to (image_tag("france.png", alt: "Example Image", id:"france")), pages_choice_path%>
           <%=image_tag("united-kingdom.png", alt: "Example Image", id:"uk")%>
           <%=link_to (image_tag("right-arrow-head.png", alt: "Example Image"))%>
       </div>

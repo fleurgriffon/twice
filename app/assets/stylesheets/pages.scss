@@ -1,7 +1,14 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-#big_logo {
+
+a:hover {
+  color: none;
+}
+
+.home {
+
+  #big_logo {
   width: 450px;
 }
 
@@ -23,4 +30,38 @@
 
 .drapeaux {
   margin-top: 30px;
+}
+}
+
+.choice {
+  p {
+    margin-top: 110px;
+    font-family: 'avenir next';
+    font-size: 30px;
+    color: #477E79;
+  }
+
+.image_gauche img{
+  display: block;
+  float: left;
+  width: 300px;
+  height: 300px;
+}
+.image_droite img {
+  display: block;
+  float: right;
+  width: 300px;
+  height: 300px;
+}
+.images {
+  margin-top: 115px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.images img:hover{
+  opacity: .5;
+}
+
+
 }

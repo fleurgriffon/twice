@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
+  resources :articles
+  resources :notions
   get 'pages/home'
 
   get 'pages/choice'
+
+  get 'pages/ensavoirplus'
 
   get 'home/choice'
   root :to => "pages#home"

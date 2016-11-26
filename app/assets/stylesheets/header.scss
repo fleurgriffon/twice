@@ -1,0 +1,16 @@
+header {
+  position: static;;
+  top: 0;
+  width: 100%;
+  height: 180px;
+  background-image: url('header_bg.jpg');
+  repeat: no-repeat;
+
+    h1{
+      font-family: 'blacksword';
+      color: #ffffff;
+      font-size: 100px;
+      margin-top: 0;
+      padding-top: 31px;
+    }
+}

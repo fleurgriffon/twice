@@ -1,0 +1,1 @@
+json.array! @notions, partial: 'notions/notion', as: :notion
