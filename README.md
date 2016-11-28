@@ -1,4 +1,5 @@
 # README
+<a href="https://codeclimate.com/github/EmmaJouffroy/twice"><img src="https://codeclimate.com/github/EmmaJouffroy/twice/badges/gpa.svg" /></a>
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
