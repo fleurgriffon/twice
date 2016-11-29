@@ -1,15 +1,15 @@
 # == Schema Information
 #
-# Table name: notions
+# Table name: comments
 #
 #  id         :integer          not null, primary key
 #  name       :string
+#  birthday   :date
+#  content    :text
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
 
-class Notion < ApplicationRecord
-  has_and_belongs_to_many :articles
-  has_many :comments
-
+class Comment < ApplicationRecord
+  belongs_to :notion
 end

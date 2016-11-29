@@ -1,10 +1,11 @@
-<%= simple_form_for(@article) do |f| %>
-  <%= f.error_notification %>
-
-  <div class="form-inputs">
-  </div>
-
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
+<%= form_for(@article) do |f| %>
+    <%= f.label :titre %>
+    <%= f.text_field :titre %>
+    <%= f.label :year, 'date sur timeline' %>
+    <%= f.number_field :year %>
+    <%= f.text_area :content %>
+    <%= f.file_field :photo %>
+    <%= f.file_field :audio %>
+    <%= f.file_field :video %>
+    <%= f.submit :submit %>
 <% end %>

@@ -69,6 +69,6 @@ class NotionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def notion_params
-      params.fetch(:notion, {})
+      params.require(:notion).permit(:name)
     end
 end
