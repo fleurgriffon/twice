@@ -28,6 +28,14 @@ class Article < ApplicationRecord
   validates :titre,  presence: true
   validates :content,  presence: true
   validates :year,  presence: true
+  has_attached_file :photo
+  has_attached_file :video
+  has_attached_file :audio
+
+  validates_attachment_content_type :photo, content_type:/^image\/.+/i
+  validates_attachment_content_type :audio, content_type: /^audio\/.+/i
+  validates_attachment_content_type :video, content_type: /^video\/.+/i
+
 
 
 end

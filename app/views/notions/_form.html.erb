@@ -1,7 +1,13 @@
 <%= form_for(@notion) do |f| %>
-
+<% if @notion.errors.any? %>
+<% @notion.errors.full_messages.each do |message| %>
+<div><%= message %></div>
+<%end%>
+<%end%>
 
   <%= f.text_field :name %>
+  <%= f.file_field :photo %>
     <%= f.submit :submit %>
+
   </div>
 <% end %>

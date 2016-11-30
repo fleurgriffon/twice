@@ -54,6 +54,7 @@ class NotionsController < ApplicationController
   # DELETE /notions/1
   # DELETE /notions/1.json
   def destroy
+    @articles = Article.where("notion_id")
     @notion.destroy
     respond_to do |format|
       format.html { redirect_to notions_url, notice: 'Notion was successfully destroyed.' }
@@ -69,6 +70,6 @@ class NotionsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def notion_params
-      params.require(:notion).permit(:name)
+      params.require(:notion).permit(:name, :photo)
     end
 end
