@@ -28,5 +28,3 @@ tmp/*
 tmp/**/*
 uploads/*
 app/assets/images/notions
-.rbenv-gemsets
-.ruby_version
