@@ -10,7 +10,13 @@ class NotionsController < ApplicationController
   # GET /notions/1
   # GET /notions/1.json
   def show
+  @notion = Notion.find(params[:id])
+
+  respond_to do |format|
+    format.html  # show.html.erb
+    format.json  { render :json => @post }
   end
+end
 
   # GET /notions/new
   def new
