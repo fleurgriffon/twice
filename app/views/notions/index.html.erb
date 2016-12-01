@@ -1,17 +1,15 @@
-<p id="notice"><%= notice %></p>
 <%= render 'layouts/header'%>
+<p id="notice"><%= notice %></p>
 
 
- <h2> Comprendre le numérique à travers 100 notions... </h2>
-<div class="container notion col-md-8 col-md-offset-2">
+ <h2 class="text-center"> Comprendre le numérique à travers 100 notions... </h2>
+ <div class="text-center">
+ <input class="text-center" type="search" placeholder="Entrez un mot-clef" name="the_search">
+ </div>
+<div class="container notion col-md-8 col-md-offset-2 notions">
     <div class="row">
-      <div>
     <% @notions.each do |notion| %>
         <td><%= link_to (image_tag notion.photo, width: 300), notion%></td>
-
-
-
     <% end %>
-</div>
-</div>
+    </div>
 </div>
