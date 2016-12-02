@@ -16,14 +16,21 @@ class NotionsController < ApplicationController
     format.html  # show.html.erb
     format.json  { render :json => @post }
   end
+
+  @comment = Comment.new
+  @comments = Comment.all
 end
+
+
 
   # GET /notions/new
   def new
     @notion = Notion.new
   end
 
+
   # GET /notions/1/edit
+
   def edit
   end
 
@@ -78,4 +85,6 @@ end
     def notion_params
       params.require(:notion).permit(:name, :photo)
     end
+    # Never trust parameters from the scary internet, only allow the white list through.
+
 end
