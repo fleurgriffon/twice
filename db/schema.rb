@@ -79,8 +79,8 @@ ActiveRecord::Schema.define(version: 20161202131028) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer  "comment_id"
-    t.index ["comment_id"], name: "index_comments_on_comment_id", using: :btree
+    t.integer  "notion_id"
+    t.index ["notion_id"], name: "index_comments_on_notion_id", using: :btree
   end
 
   create_table "notions", force: :cascade do |t|
@@ -93,5 +93,5 @@ ActiveRecord::Schema.define(version: 20161202131028) do
     t.datetime "updated_at",         null: false
   end
 
-  add_foreign_key "comments", "comments"
+  add_foreign_key "comments", "notions"
 end

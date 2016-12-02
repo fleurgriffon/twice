@@ -12,10 +12,10 @@
 
 <div class="container notion col-md-8 col-md-offset-2 notions">
     <div class="row">
-    <% Comment.all.each do |comments| %>
-        <td><%= comments.name%></td>
-        <td><%= comments.birthday%></td>
-        <td><%= comments.content%></td>
+    <% @comments.each do |comment| %>
+        <td><%= comment.name%></td>
+        <td><%= comment.birthday%></td>
+        <td><%= comment.content%></td>
         <% end %>
     </div>
 </div>

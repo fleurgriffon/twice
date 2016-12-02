@@ -1,8 +1,9 @@
 class CommentController < ApplicationController
 
   def create
-    @comment = Comment.new(comment_params)
     @notion = Notion.find(params[:id])
+    @comment = Comment.new(comment_params)
+    @comment[:notion_id] = @notion.id
 
     respond_to do |format|
       if @comment.save

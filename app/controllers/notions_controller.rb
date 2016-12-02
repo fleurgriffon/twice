@@ -18,7 +18,9 @@ class NotionsController < ApplicationController
   end
 
   @comment = Comment.new
-  @comments = Comment.all
+  @comments = Comment.where(notion: @notion)
+
+  
 end
 
 
