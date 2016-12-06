@@ -8,9 +8,8 @@
 </p>
 <div class="container notion col-md-8 col-md-offset-2 notions">
     <div class="row">
-        <%= debug @articles %>
     <% @notion.articles.each do |article| %>
-        <td><%= article.titre%></td>
+        <td><%= link_to article.titre, article_path%></td>
         <% end %>
     </div>
 </div>

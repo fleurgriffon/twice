@@ -8,6 +8,6 @@
     <%= f.file_field :audio %>
     <%= f.file_field :video %>
     <% notions_array = Notion.all.map { |notion| [notion.name, notion.id] } %>
-    <%= select_tag(:notion_id, options_for_select(notions_array), multiple: true) %>
+    <%= f.select :notion_ids, options_for_select(notions_array), {}, {:multiple => true} %>
     <%= f.submit :submit %>
 <% end %>

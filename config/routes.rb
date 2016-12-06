@@ -3,11 +3,8 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   resources :articles
   resources :notions
-
-
   resources :comments
   post "comment/new/:id" => "comment#create", as: :create_comment
-
 
   get 'pages/home'
 
